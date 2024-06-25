@@ -55,40 +55,40 @@ const Add = () => {
         <div className='add'>
             <form className='flex-col' onSubmit={onSubmitHandler}>
                 <div className='add-img-upload flex-col'>
-                    <p>Upload image</p>
+                    <p>Subir Imagen</p>
                     <input onChange={(e) => { setImage(e.target.files[0]); e.target.value = '' }} type="file" accept="image/*" id="image" hidden />
                     <label htmlFor="image">
                         <img src={!image ? assets.upload_area : URL.createObjectURL(image)} alt="" />
                     </label>
                 </div>
                 <div className='add-product-name flex-col'>
-                    <p>Product name</p>
-                    <input name='name' onChange={onChangeHandler} value={data.name} type="text" placeholder='Type here' required />
+                    <p>Nombre del Producto</p>
+                    <input name='name' onChange={onChangeHandler} value={data.name} type="text" placeholder='Paracetamol' required />
                 </div>
                 <div className='add-product-description flex-col'>
-                    <p>Product description</p>
-                    <textarea name='description' onChange={onChangeHandler} value={data.description} type="text" rows={6} placeholder='Write content here' required />
+                    <p>Descripción del Producto</p>
+                    <textarea name='description' onChange={onChangeHandler} value={data.description} type="text" rows={6} placeholder='Paracetamol 500mg' required />
                 </div>
                 <div className='add-category-price'>
                     <div className='add-category flex-col'>
-                        <p>Product category</p>
+                        <p>Categorías</p>
                         <select name='category' onChange={onChangeHandler} >
-                            <option value="Salad">Salad</option>
-                            <option value="Rolls">Rolls</option>
-                            <option value="Deserts">Deserts</option>
-                            <option value="Sandwich">Sandwich</option>
-                            <option value="Cake">Cake</option>
-                            <option value="Pure Veg">Pure Veg</option>
+                            <option value="Farmacia">Farmacia</option>
+                            <option value="nfantil">Infantil</option>
+                            <option value="Higiene">Higiene</option>
+                            <option value="Belleza">Belleza</option>
+                            <option value="Nutrición">Nutrición</option>
+                            <option value="Adulto Mayor">Adulto Mayor</option>
                             <option value="Pasta">Pasta</option>
                             <option value="Noodles">Noodles</option>
                         </select>
                     </div>
                     <div className='add-price flex-col'>
-                        <p>Product Price</p>
+                        <p>Precio de producto</p>
                         <input type="Number" name='price' onChange={onChangeHandler} value={data.price} placeholder='25' />
                     </div>
                 </div>
-                <button type='submit' className='add-btn' >ADD</button>
+                <button type='submit' className='add-btn' >Agregar</button>
             </form>
         </div>
     )

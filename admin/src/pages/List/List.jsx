@@ -37,14 +37,14 @@ const List = () => {
 
   return (
     <div className='list add flex-col'>
-      <p>All Foods List</p>
+      <p>Todos los productos</p>
       <div className='list-table'>
         <div className="list-table-format title">
-          <b>Image</b>
-          <b>Name</b>
-          <b>Category</b>
-          <b>Price</b>
-          <b>Action</b>
+          <b>Imagen</b>
+          <b>Nombre</b>
+          <b>Categoría</b>
+          <b>Precio</b>
+          <b>Acciones</b>
         </div>
         {list.map((item, index) => {
           return (
@@ -52,7 +52,7 @@ const List = () => {
               <img src={`${url}/images/` + item.image} alt="" />
               <p>{item.name}</p>
               <p>{item.category}</p>
-              <p>{currency}{item.price}</p>
+              <p>S/. {item.price}</p>
               <p className='cursor' onClick={() => removeFood(item._id)}>x</p>
             </div>
           )

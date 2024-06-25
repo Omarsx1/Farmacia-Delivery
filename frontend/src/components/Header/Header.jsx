@@ -9,7 +9,7 @@ const Header = () => {
         <p>
         Rápido, confiable y siempre a tu alcance.
         </p>
-        <button>View Menu</button>
+        <button>Ver Productos</button>
       </div>
     </div>
   );

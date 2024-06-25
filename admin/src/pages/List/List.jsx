@@ -52,7 +52,7 @@ const List = () => {
               <img src={`${url}/images/` + item.image} alt="" />
               <p>{item.name}</p>
               <p>{item.category}</p>
-              <p>S/. {item.price}</p>
+              <p>S/. {parseFloat(item.price).toFixed(2)}</p>
               <p className='cursor' onClick={() => removeFood(item._id)}>x</p>
             </div>
           )

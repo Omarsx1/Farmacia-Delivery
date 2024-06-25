@@ -11,12 +11,24 @@
 
 .footer-content {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     gap: 80px;
 }
 
-.footer-content-left,
+.footer-content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.footer-content-group {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
 .footer-content-center,
 .footer-content-right,
 .footer-content-address {
@@ -41,12 +53,26 @@
     color: white;
 }
 
-.footer-social-icons img {
+.footer-social-icons img,
+.footer-social-icons .social-icon {
     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #444; /* color de fondo similar a los otros iconos */
+    color: white; /* color del icono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.footer-social-icons .social-icon {
+    font-size: 20px; /* ajusta el tamaño del icono si es necesario */
 }
 
 .footer-social-icons {
     display: flex;
+    margin-top: 18px;
     gap: 15px;
 }
 
@@ -62,9 +88,13 @@
 
 @media (max-width: 750px) {
     .footer-content {
-        display: flex;
         flex-direction: column;
-        gap: 35px;
+        align-items: center;
+    }
+
+    .footer-content-group {
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-copyright {

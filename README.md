@@ -1,4 +1,4 @@
-## Farmacia Delivery
+## Farmacia Delivery 💊
 
 **Sistema de venta por delivery para farmacia.**
 

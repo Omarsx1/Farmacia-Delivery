@@ -7,11 +7,12 @@ const ExploreMenu = ({ category, setCategory }) => {
 
   return (
     <div className="explore-menu" id="explore-menu">
-      <h1>Explore our menu</h1>
+      <h1 className="text-4xl">Explora nuestro catálogo</h1>
       <p className="explore-menu-text">
-        Choose from a diverse menu featuring a delectable array of dishes. Our
-        mission is to satisfy your cravings and elevate your dining experience,
-        one delicious meal at a time.
+        Seleccione entre nuestra amplia gama de productos farmacéuticos y de
+        cuidado personal. Nuestra misión es atender sus necesidades de salud y
+        bienestar, mejorando su calidad de vida, un medicamento confiable a la
+        vez.
       </p>
       <div className="explore-menu-list">
         {menu_list.map((item, index) => {

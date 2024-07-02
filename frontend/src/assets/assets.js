@@ -88,27 +88,27 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Salad",
+        menu_name: "Farmacia",
         menu_image: menu_1
     },
     {
-        menu_name: "Rolls",
+        menu_name: "Infantil",
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Higiene",
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Belleza",
         menu_image: menu_4
     },
     {
-        menu_name: "Cake",
+        menu_name: "Nutrición",
         menu_image: menu_5
     },
     {
-        menu_name: "Pure Veg",
+        menu_name: "Adulto mayor",
         menu_image: menu_6
     },
     {

@@ -52,3 +52,11 @@
         font-size: 14px;
     }
 }
+.explore-menu {
+    margin-top: 100px; /* Ajusta el margen superior según sea necesario */
+    margin-bottom: 100px; /* Ajusta el margen inferior según sea necesario */
+    margin-left: 50px; /* Ajusta el margen izquierdo según sea necesario */
+    padding-left: 20px; /* Espacio interno hacia la izquierda */
+
+  }
+  

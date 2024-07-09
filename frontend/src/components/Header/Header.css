@@ -21,11 +21,11 @@
 }
 .header-contents h2{
     font-weight:500;
-    color: white;
+    color: rgb(6, 85, 255);
     font-size: max(3.5vw,18px);
 }
 .header-contents p{
-    color: white;
+    color: rgb(147 197 253,);
     font-size: 1vw;
 }
 
